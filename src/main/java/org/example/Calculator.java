@@ -38,6 +38,7 @@ public class Calculator {
                     System.out.println("Enter your value: ");
                     int value = userInputValue.nextInt();
 
+                    System.out.println("*********** Result ***********");
                     if (to == 1){
                         secToMin(value);
                     } else if (to == 2){
@@ -60,6 +61,7 @@ public class Calculator {
                     System.out.println("Enter your value: ");
                     int value = userInputValue.nextInt();
 
+                    System.out.println("*********** Result ***********");
                     if (to == 1){
                         minToSec(value);
                     } else if (to == 2){
@@ -82,6 +84,7 @@ public class Calculator {
                     System.out.println("Enter your value: ");
                     int value = userInputValue.nextInt();
 
+                    System.out.println("*********** Result ***********");
                     if (to == 1){
                         hourToSec(value);
                     } else if (to == 2){
@@ -104,6 +107,7 @@ public class Calculator {
                     System.out.println("Enter your value: ");
                     int value = userInputValue.nextInt();
 
+                    System.out.println("*********** Result ***********");
                     if (to == 1){
                         dayToSec(value);
                     } else if (to == 2){
@@ -126,6 +130,7 @@ public class Calculator {
                     System.out.println("Enter your value: ");
                     int value = userInputValue.nextInt();
 
+                    System.out.println("*********** Result ***********");
                     if (to == 1){
                         yearToSec(value);
                     } else if (to == 2){
@@ -143,6 +148,7 @@ public class Calculator {
                 System.out.println("Quitting...");
                 flag = false;
             }
+            System.out.println("******************************\n");
         }
     }
 
