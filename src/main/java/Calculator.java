@@ -145,6 +145,8 @@ public class Calculator {
             } else if (from == 9){
                 System.out.println("Quitting...");
                 flag = false;
+            } else {
+                System.out.println("That is not an option.");
             }
             System.out.println("******************************\n");
         }
