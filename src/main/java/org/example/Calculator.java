@@ -232,7 +232,7 @@ public class Calculator {
 
     // ****************************** Years ******************************
     public static void yearToSec(double year){
-        double result = year*seconds*minutes*hours*years;
+        double result = year*minutes*hours*days*years;
         System.out.println("There is " + df.format(result) + " seconds in " + year + " years");
     }
 
