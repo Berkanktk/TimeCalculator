@@ -148,7 +148,7 @@ public class Calculator {
             } else {
                 System.out.println("That is not an option.");
             }
-            System.out.println("******************************\n");
+            System.out.println("*******************************\n");
         }
     }
 
