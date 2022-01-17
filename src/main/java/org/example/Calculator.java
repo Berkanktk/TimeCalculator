@@ -28,24 +28,26 @@ public class Calculator {
             int from = userInputFrom.nextInt();
 
             Scanner userInputTo = new Scanner(System.in);
+            Scanner userInputValue = new Scanner(System.in);
 
             if (from == 1){
                 System.out.println("To: " + "\n1. Minutes \n2. Hours\n3. Days\n4. Years\n9. Quit");
                 int to = userInputTo.nextInt();
 
-                System.out.println("Enter your value: ");
-                Scanner userInputValue = new Scanner(System.in);
-                int value = userInputValue.nextInt();
+                if (to != 9) {
+                    System.out.println("Enter your value: ");
+                    int value = userInputValue.nextInt();
 
-                if (to == 1){
-                    secToMin(value);
-                } else if (to == 2){
-                    secToHour(value);
-                } else if (to == 3){
-                    secToDays(value);
-                } else if (to == 4){
-                    secToYears(value);
-                } else if (to == 9){
+                    if (to == 1){
+                        secToMin(value);
+                    } else if (to == 2){
+                        secToHour(value);
+                    } else if (to == 3){
+                        secToDays(value);
+                    } else if (to == 4){
+                        secToYears(value);
+                    }
+                } else {
                     System.out.println("Quitting...");
                     flag = false;
                 }
@@ -54,38 +56,42 @@ public class Calculator {
                 System.out.println("To: " + "\n1. Seconds \n2. Hours\n3. Days\n4. Years\n9. Quit");
                 int to = userInputTo.nextInt();
 
-                System.out.println("Enter your value: ");
-                Scanner userInputValue = new Scanner(System.in);
-                int value = userInputValue.nextInt();
-                if (to == 1){
-                    minToSec(value);
-                } else if (to == 2){
-                    minToHour(value);
-                } else if (to == 3){
-                    minToDays(value);
-                } else if (to == 4){
-                    minToYears(value);
-                } else if (to == 9){
+                if (to != 9) {
+                    System.out.println("Enter your value: ");
+                    int value = userInputValue.nextInt();
+
+                    if (to == 1){
+                        minToSec(value);
+                    } else if (to == 2){
+                        minToHour(value);
+                    } else if (to == 3){
+                        minToDays(value);
+                    } else if (to == 4){
+                        minToYears(value);
+                    }
+                } else {
                     System.out.println("Quitting...");
                     flag = false;
                 }
 
-            } else if (from == 3){
+            } else if (from == 3) {
                 System.out.println("To: " + "\n1. Seconds \n2. Minutes\n3. Days\n4. Years\n9. Quit");
                 int to = userInputTo.nextInt();
 
-                System.out.println("Enter your value: ");
-                Scanner userInputValue = new Scanner(System.in);
-                int value = userInputValue.nextInt();
-                if (to == 1){
-                    hourToSec(value);
-                } else if (to == 2){
-                    hourToMin(value);
-                } else if (to == 3){
-                    hourToDay(value);
-                } else if (to == 4){
-                    hourToYear(value);
-                } else if (to == 9){
+                if (to != 9) {
+                    System.out.println("Enter your value: ");
+                    int value = userInputValue.nextInt();
+
+                    if (to == 1){
+                        hourToSec(value);
+                    } else if (to == 2){
+                        hourToMin(value);
+                    } else if (to == 3){
+                        hourToDay(value);
+                    } else if (to == 4){
+                        hourToYear(value);
+                    }
+                } else {
                     System.out.println("Quitting...");
                     flag = false;
                 }
@@ -94,18 +100,20 @@ public class Calculator {
                 System.out.println("To: " + "\n1. Seconds \n2. Minutes\n3. Hours\n4. Years\n9. Quit");
                 int to = userInputTo.nextInt();
 
-                System.out.println("Enter your value: ");
-                Scanner userInputValue = new Scanner(System.in);
-                int value = userInputValue.nextInt();
-                if (to == 1){
-                    dayToSec(value);
-                } else if (to == 2){
-                    dayToMin(value);
-                } else if (to == 3){
-                    dayToHour(value);
-                } else if (to == 4){
-                    dayToYear(value);
-                } else if (to == 9){
+                if (to != 9) {
+                    System.out.println("Enter your value: ");
+                    int value = userInputValue.nextInt();
+
+                    if (to == 1){
+                        dayToSec(value);
+                    } else if (to == 2){
+                        dayToMin(value);
+                    } else if (to == 3){
+                        dayToHour(value);
+                    } else if (to == 4){
+                        dayToYear(value);
+                    }
+                } else {
                     System.out.println("Quitting...");
                     flag = false;
                 }
@@ -114,18 +122,20 @@ public class Calculator {
                 System.out.println("To: " + "\n1. Seconds \n2. Minutes\n3. Hours\n4. Days\n9. Quit");
                 int to = userInputTo.nextInt();
 
-                System.out.println("Enter your value: ");
-                Scanner userInputValue = new Scanner(System.in);
-                int value = userInputValue.nextInt();
-                if (to == 1){
-                    yearToSec(value);
-                } else if (to == 2){
-                    yearToMin(value);
-                } else if (to == 3){
-                    yearToHour(value);
-                } else if (to == 4){
-                    yearToDay(value);
-                } else if (to == 9){
+                if (to != 9) {
+                    System.out.println("Enter your value: ");
+                    int value = userInputValue.nextInt();
+
+                    if (to == 1){
+                        yearToSec(value);
+                    } else if (to == 2){
+                        yearToMin(value);
+                    } else if (to == 3){
+                        yearToHour(value);
+                    } else if (to == 4){
+                        yearToDay(value);
+                    }
+                } else {
                     System.out.println("Quitting...");
                     flag = false;
                 }
